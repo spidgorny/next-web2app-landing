@@ -35,19 +35,22 @@ const Feature = ({
 const SaasLandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-white">
-      <header className="bg-white shadow-md">
+      <header className="bg-white shadow-md sticky top-0">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-blue-600">AppGen</div>
           <div className="space-x-4">
-            <a href="#features" className="text-gray-600 hover:text-blue-600">
+            <Link
+              href="#features"
+              className="text-gray-600 hover:text-blue-600"
+            >
               Features
-            </a>
-            <a
+            </Link>
+            <Link
               href="#how-it-works"
               className="text-gray-600 hover:text-blue-600"
             >
               How It Works
-            </a>
+            </Link>
             <Link href="/start">
               <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
                 Get Started
