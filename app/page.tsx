@@ -85,7 +85,7 @@ const SaasLandingPage = () => {
               <p className="text-gray-600 mb-4">
                 Watch as we turn your existing website into a sleek,
                 user-friendly mobile app. Our AI-powered technology ensures a
-                seamless transition from web to mobile.
+                seamless transition from web to mobile. asdq
               </p>
               <ul className="list-disc list-inside text-gray-600">
                 <li>Maintain your brand identity</li>
