@@ -80,12 +80,12 @@ const SaasLandingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-semibold mb-6">
-                See Your Website Transform
+                See Your Website Transform!
               </h2>
               <p className="text-gray-600 mb-4">
                 Watch as we turn your existing website into a sleek,
                 user-friendly mobile app. Our AI-powered technology ensures a
-                seamless transition from web to mobile. asdq
+                seamless transition from web to mobile.
               </p>
               <ul className="list-disc list-inside text-gray-600">
                 <li>Maintain your brand identity</li>
