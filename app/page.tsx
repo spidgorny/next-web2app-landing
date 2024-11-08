@@ -1,36 +1,9 @@
-import React, { ReactNode } from "react";
-import { Smartphone, Globe, Clock3 } from "lucide-react";
+import React from "react";
+import {Clock3, Globe, Smartphone} from "lucide-react";
 import Link from "next/link";
-
-const AppPreview = () => (
-  <div className="bg-gray-200 rounded-lg p-4 shadow-lg">
-    <div className="bg-white rounded-lg overflow-hidden shadow-inner">
-      <div className="bg-blue-500 text-white p-2 text-center">App Header</div>
-      <div className="p-4">
-        <div className="bg-gray-300 h-8 w-3/4 rounded mb-2"></div>
-        <div className="bg-gray-300 h-4 w-full rounded mb-2"></div>
-        <div className="bg-gray-300 h-4 w-full rounded mb-2"></div>
-        <div className="bg-gray-300 h-8 w-1/2 rounded"></div>
-      </div>
-    </div>
-  </div>
-);
-
-const Feature = ({
-  icon,
-  title,
-  description,
-}: {
-  icon: ReactNode;
-  title: ReactNode;
-  description: ReactNode;
-}) => (
-  <div className="flex flex-col items-center text-center">
-    {icon}
-    <h3 className="text-xl font-semibold mt-4 mb-2 text-black">{title}</h3>
-    <p className="text-gray-600">{description}</p>
-  </div>
-);
+import 'react-device-frameset/styles/marvel-devices.min.css'
+import {AppPreview} from "@/app/app-preview";
+import {Feature} from "@/app/feature";
 
 const SaasLandingPage = () => {
   return (
