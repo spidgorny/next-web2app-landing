@@ -1,14 +1,14 @@
 import React from "react";
-import {Clock3, Globe, Smartphone} from "lucide-react";
+import { Clock3, Globe, Smartphone } from "lucide-react";
 import Link from "next/link";
-import 'react-device-frameset/styles/marvel-devices.min.css'
-import {AppPreview} from "@/app/app-preview";
-import {Feature} from "@/app/feature";
+import "react-device-frameset/styles/marvel-devices.min.css";
+import { AppPreview } from "@/app/app-preview";
+import { Feature } from "@/app/feature";
 
 const SaasLandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-white">
-      <header className="bg-white shadow-md sticky top-0">
+      <header className="bg-white shadow-md sticky top-0 z-10">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-blue-600">AppGen</div>
           <div className="space-x-4">
@@ -50,9 +50,9 @@ const SaasLandingPage = () => {
         </section>
 
         <section className="mb-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-semibold mb-6">
+              <h2 className="text-3xl font-semibold mb-6 text-black">
                 See Your Website Transform!
               </h2>
               <p className="text-gray-600 mb-4">
@@ -65,31 +65,32 @@ const SaasLandingPage = () => {
                 <li>Optimize for mobile user experience</li>
                 <li>Add mobile-specific features</li>
               </ul>
-            </div>
-            <AppPreview />
-          </div>
-        </section>
 
-        <section id="features" className="mb-20">
-          <h2 className="text-3xl font-semibold text-center mb-12 text-black">
-            Why Choose AppGen?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Feature
-              icon={<Globe size={48} className="text-blue-600" />}
-              title="Website to App"
-              description="Convert any website into a fully functional mobile app with ease."
-            />
-            <Feature
-              icon={<Clock3 size={48} className="text-blue-600" />}
-              title="Quick Turnaround"
-              description="Get your custom mobile app delivered in just 3 days."
-            />
-            <Feature
-              icon={<Smartphone size={48} className="text-blue-600" />}
-              title="Mobile Optimized"
-              description="Ensure a great user experience with mobile-first design principles."
-            />
+              <section id="features" className="my-20">
+                <h2 className="text-3xl font-semibold text-center mb-12 text-black">
+                  Why Choose AppGen?
+                </h2>
+                <div className="grid grid-cols-1 md:grid-rows-3 gap-8">
+                  <Feature
+                    icon={<Globe size={48} className="text-blue-600" />}
+                    title="Website to App"
+                    description="Convert any website into a fully functional mobile app with ease."
+                  />
+                  <Feature
+                    icon={<Clock3 size={48} className="text-blue-600" />}
+                    title="Quick Turnaround"
+                    description="Get your custom mobile app delivered in just 3 days."
+                  />
+                  <Feature
+                    icon={<Smartphone size={48} className="text-blue-600" />}
+                    title="Mobile Optimized"
+                    description="Ensure a great user experience with mobile-first design principles."
+                  />
+                </div>
+              </section>
+            </div>
+
+            <AppPreview />
           </div>
         </section>
 
