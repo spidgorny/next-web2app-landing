@@ -1,7 +1,6 @@
 "use client";
 import { DeviceFrameset } from "react-device-frameset";
 import React, { useState } from "react";
-import { useStateObj } from "spidgorny-react-helpers/use-state-obj";
 import { FormEvent } from "react";
 import { IoMdShare } from "react-icons/io";
 import { FaSpinner } from "react-icons/fa6";
@@ -19,6 +18,7 @@ export const AppPreview = () => {
     async (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       setUrlError(null);
+      console.log(formData);
       const { data } = await axios.post("/api/preview", formData);
       if (data.status === "error") {
         setUrlError(data.message);
