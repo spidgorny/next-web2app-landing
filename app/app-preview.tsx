@@ -1,33 +1,48 @@
 "use client";
 import { DeviceFrameset } from "react-device-frameset";
-import React from "react";
+import React, { useState } from "react";
 import { useStateObj } from "spidgorny-react-helpers/use-state-obj";
 import { FormEvent } from "react";
 import { IoMdShare } from "react-icons/io";
+import { FaSpinner } from "react-icons/fa6";
+import { useAsyncWorking } from "spidgorny-react-helpers/use-async-working";
+import axios from "axios";
+import { useFormData } from "spidgorny-react-helpers/use-form-data";
 
 export const AppPreview = () => {
-  const formProps = useStateObj<{ url?: string; title?: string }>({});
+  const { formData, onChange } = useFormData<{ url?: string; title?: string }>(
+    {},
+  );
+  const [urlError, setUrlError] = useState<string | null>(null);
 
-  const onSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const formData = Object.fromEntries(
-      new FormData(event.target as HTMLFormElement).entries(),
-    );
-    formProps.set(formData);
-  };
+  const { isWorking, error, run } = useAsyncWorking(
+    async (event: FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      setUrlError(null);
+      const { data } = await axios.post("/api/preview", formData);
+      if (data.status === "error") {
+        setUrlError(data.message);
+      }
+    },
+  );
 
-  const url = formProps.value?.url;
+  const url = formData.url;
+  const isValidUrl =
+    url && url.startsWith("http") && url.includes("://") && url.includes(".");
+
   return (
     <div className="flex flex-col items-center">
-      <form onSubmit={onSubmit} className="w-full mb-10">
+      <form onSubmit={run} className="w-full mb-10">
         <div className="flex flex-col gap-3 mb-3">
           <label className="text-gray-800">
-            Website URL:
+            Website URL ({isValidUrl ? 1 : 0}):
             <input
               type="url"
               name="url"
               placeholder="Enter your website URL"
-              className="w-full px-4 py-2 text-gray-700 rounded-lg shadow-sm"
+              className="w-full px-4 py-2 text-gray-700 rounded-lg shadow-sm bg-white"
+              value={formData.url ?? ""}
+              onChange={onChange}
             />
           </label>
           <label className="text-gray-800">
@@ -37,22 +52,31 @@ export const AppPreview = () => {
               name="title"
               placeholder="App Title"
               className="w-full px-4 py-2 text-gray-700 rounded-lg shadow-sm"
+              value={formData.title ?? ""}
+              onChange={onChange}
             />
           </label>
-          <button className="bg-blue-500 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 transition duration-300">
-            Preview App
+          <button
+            className="bg-blue-500 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 transition duration-300 disabled:opacity-50 flex justify-center gap-3"
+            type="submit"
+            disabled={!isValidUrl}
+          >
+            {isWorking ? <FaSpinner /> : ""} Preview App
           </button>
         </div>
       </form>
       <DeviceFrameset device="iPhone X" color="gold">
         <div className="bg-gray-200 p-4 shadow-lg text-black text-xl flex justify-between">
-          <div>{formProps.value?.title}</div>
+          <div>{formData?.title}</div>
           <div>
             <IoMdShare />
           </div>
         </div>
-        {url && (
+        {url && !urlError && (
           <iframe src={url} className="w-full h-full overflow-auto"></iframe>
+        )}
+        {urlError && (
+          <div className="bg-red-100 text-red-800 p-4">{urlError}</div>
         )}
         {!url && (
           <div className="bg-gray-200 rounded-lg p-4 shadow-lg mt-6">
