@@ -16,7 +16,7 @@ export const AppPreview = () => {
     formProps.set(formData);
   };
 
-  let url = formProps.value?.url;
+  const url = formProps.value?.url;
   return (
     <div className="flex flex-col items-center">
       <form onSubmit={onSubmit} className="w-full mb-10">
