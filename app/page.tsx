@@ -4,6 +4,7 @@ import Link from "next/link";
 import "react-device-frameset/styles/marvel-devices.min.css";
 import { AppPreview } from "@/app/app-preview";
 import { Feature } from "@/app/feature";
+import { ContactForm } from "@/app/contact-form";
 
 const SaasLandingPage = () => {
   return (
@@ -24,7 +25,7 @@ const SaasLandingPage = () => {
             >
               How It Works
             </Link>
-            <Link href="/start">
+            <Link href="#start">
               <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
                 Get Started
               </button>
@@ -42,7 +43,7 @@ const SaasLandingPage = () => {
             No coding required. Just provide your URL and we&apos;ll do the
             rest.
           </p>
-          <Link href="/start">
+          <Link href="#start">
             <button className="bg-blue-600 text-white text-lg px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">
               Start Your App Journey
             </button>
@@ -142,12 +143,17 @@ const SaasLandingPage = () => {
           <p className="text-xl mb-8">
             Transform your online presence with a custom mobile app today!
           </p>
-          <Link href="/start">
+          <Link href="#start">
             <button className="bg-white text-blue-600 text-lg px-8 py-3 rounded-full hover:bg-gray-100 transition duration-300">
               Get Started Now
             </button>
           </Link>
         </section>
+
+        <div id="start" />
+        <div className="my-20">
+          <ContactForm />
+        </div>
       </main>
 
       <footer className="bg-gray-800 text-white py-8">

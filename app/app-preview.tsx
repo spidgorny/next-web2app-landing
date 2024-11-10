@@ -35,7 +35,7 @@ export const AppPreview = () => {
       <form onSubmit={run} className="w-full mb-10">
         <div className="flex flex-col gap-3 mb-3">
           <label className="text-gray-800">
-            Website URL ({isValidUrl ? 1 : 0}):
+            Website URL
             <input
               type="url"
               name="url"

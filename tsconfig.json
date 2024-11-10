@@ -16,6 +16,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "noImplicitAny": false,
+    "allowImportingTsExtensions": true,
     "incremental": true,
     "plugins": [
       {
