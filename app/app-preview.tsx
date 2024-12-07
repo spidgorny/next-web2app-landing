@@ -18,7 +18,7 @@ export const AppPreview = () => {
     async (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       setUrlError(null);
-      console.log(formData);
+      console.log("formData", formData);
       const { data } = await axios.post("/api/preview", formData);
       if (data.status === "error") {
         setUrlError(data.message);
@@ -31,7 +31,7 @@ export const AppPreview = () => {
     url && url.startsWith("http") && url.includes("://") && url.includes(".");
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center" id="start">
       <form onSubmit={run} className="w-full mb-10">
         <div className="flex flex-col gap-3 mb-3">
           <label className="text-gray-800">

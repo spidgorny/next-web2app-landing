@@ -3,9 +3,9 @@ import { useFormData } from "spidgorny-react-helpers/use-form-data";
 import { useAsyncWorking } from "spidgorny-react-helpers/use-async-working";
 import React, { FormEvent } from "react";
 import { FaSpinner } from "react-icons/fa6";
-import { EmailTemplateProps } from "@/app/components/email-template";
-import axios from "axios";
+import { EmailTemplateProps } from "@/app/components/contact-form-email-template.tsx";
 import { useStateObj } from "spidgorny-react-helpers/use-state-obj";
+import { sendContactFormAction } from "@/app/actions.ts";
 
 export function ContactForm() {
   const { formData, onChange } = useFormData<EmailTemplateProps>({
@@ -17,16 +17,13 @@ export function ContactForm() {
   const { isWorking, error, run } = useAsyncWorking(
     async (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      console.log(formData);
+      console.log("formData", formData);
       // Handle form submission logic here
-      const { data } = await axios.post("/api/send", formData);
-      console.log(data);
-      if (data.error) {
-        console.error(data.error);
-      } else {
-        console.log("Form submitted successfully");
-        isMailSent.setTrue();
-      }
+      // const { data } = await axios.post("/api/send", formData);
+      const data = await sendContactFormAction(formData);
+      console.log("res", data);
+      console.log("Form submitted successfully");
+      isMailSent.setTrue();
     },
   );
 

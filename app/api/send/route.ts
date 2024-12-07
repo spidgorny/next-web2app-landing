@@ -1,18 +1,11 @@
-import { EmailTemplate } from "@/app/components/email-template";
-import { Resend } from "resend";
+import { EmailTemplateProps } from "@/app/components/contact-form-email-template.tsx";
 import { NextRequest } from "next/server";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import { sendContactForm } from "@/lib/resend/send-contact-form.ts";
 
 export async function POST(request: NextRequest) {
   try {
-    const postData = await request.json();
-    const { data, error } = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["spidgorny@gmail.com"],
-      subject: "Contact from Web2App",
-      react: EmailTemplate(postData),
-    });
+    const postData = (await request.json()) as EmailTemplateProps;
+    const { data, error } = await sendContactForm(postData);
 
     if (error) {
       return Response.json({ error }, { status: 500 });

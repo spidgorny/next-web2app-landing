@@ -6,6 +6,14 @@ import { AppPreview } from "@/app/app-preview";
 import { Feature } from "@/app/feature";
 import { ContactForm } from "@/app/contact-form";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "AppGen - Turn Your Website into a Mobile App",
+  description:
+    "No coding required. Just provide your URL and we'll do the rest.",
+};
+
 const SaasLandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-white">
