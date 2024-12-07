@@ -15,7 +15,7 @@ export const ContactFormEmailTemplate: React.FC<
   <div>
     <h1>Welcome, Slawa & Stefan</h1>
     <p>
-      Somebody called "{props.name}" (email:{" "}
+      Somebody called &quot;{props.name}&quot; (email:{" "}
       <a href={`mailto:${props.email}`}>{props.email}</a>) wants to have a{" "}
       {props.appAndroid ? "Android" : ""}, {props.appIos ? "iOS" : ""} app(s)
       for the website (URL: <a href={props.url}>{props.url}</a>.

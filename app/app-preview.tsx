@@ -1,7 +1,6 @@
 "use client";
 import { DeviceFrameset } from "react-device-frameset";
-import React, { useState } from "react";
-import { FormEvent } from "react";
+import React, { FormEvent, useState } from "react";
 import { IoMdShare } from "react-icons/io";
 import { FaSpinner } from "react-icons/fa6";
 import { useAsyncWorking } from "spidgorny-react-helpers/use-async-working";
@@ -14,7 +13,7 @@ export const AppPreview = () => {
   );
   const [urlError, setUrlError] = useState<string | null>(null);
 
-  const { isWorking, error, run } = useAsyncWorking(
+  const { isWorking, run } = useAsyncWorking(
     async (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       setUrlError(null);

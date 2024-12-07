@@ -22,7 +22,6 @@ export function ContactForm() {
       // const { data } = await axios.post("/api/send", formData);
       const data = await sendContactFormAction(formData);
       console.log("res", data);
-      console.log("Form submitted successfully");
       isMailSent.setTrue();
     },
   );

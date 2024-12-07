@@ -24,6 +24,7 @@ function isValidUrl(url: string) {
     new URL(url);
     return true;
   } catch (e) {
+    console.log("isValidUrl error", e);
     return false;
   }
 }
