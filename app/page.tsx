@@ -42,8 +42,8 @@ const SaasLandingPage = () => {
 
       <main className="container mx-auto px-6 py-12">
         <section className="text-center mb-20 flex flex-col md:flex-row gap-3 justify-between">
-          <div className="w-3/5">
-            <h1 className="text-5xl mb-6 text-black font-serif font-thin italic">
+          <div className="w-full md:w-3/5">
+            <h1 className="text-4xl mb-6 text-black font-serif font-thin italic">
               Unlock the Power of Your Website: Transform it into a Mobile App.
             </h1>
             <p className="text-gray-600 mb-8">
@@ -64,7 +64,7 @@ const SaasLandingPage = () => {
               </Link>
             </div>
           </div>
-          <div className="self-end w-2/5">
+          <div className="self-end md:w-2/5 w-full">
             <Image
               src="/hand.png"
               width={700}
@@ -76,51 +76,47 @@ const SaasLandingPage = () => {
         </section>
 
         <section className="mb-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <div>
-              <h2 className="text-3xl font-semibold mb-6 text-black">
-                See Your Website Transform!
-              </h2>
-              <p className="text-gray-600 mb-4">
-                Watch as we turn your existing website into a sleek,
-                user-friendly mobile app. Our AI-powered technology ensures a
-                seamless transition from web to mobile.
-              </p>
-              <ul className="list-disc list-inside text-gray-600">
-                <li>Maintain your brand identity</li>
-                <li>Optimize for mobile user experience</li>
-                <li>Add mobile-specific features</li>
-              </ul>
+          <h2 className="text-3xl font-semibold mb-6 text-black">
+            See Your Website Transform!
+          </h2>
+          <p className="text-gray-600 mb-4">
+            Watch as we turn your existing website into a sleek, user-friendly
+            mobile app. Our AI-powered technology ensures a seamless transition
+            from web to mobile.
+          </p>
+          <ul className="list-disc list-inside text-gray-600">
+            <li>Maintain your brand identity</li>
+            <li>Optimize for mobile user experience</li>
+            <li>Add mobile-specific features</li>
+          </ul>
 
-              <section id="features" className="my-20">
-                <h2 className="text-3xl font-semibold text-center mb-12 text-black">
-                  Why Choose AppGen?
-                </h2>
-                <div className="grid grid-cols-1 md:grid-rows-3 gap-8">
-                  <Feature
-                    icon={<Globe size={48} className="text-blue-600" />}
-                    title="Website to App"
-                    description="Convert any website into a fully functional mobile app with ease."
-                  />
-                  <Feature
-                    icon={<Clock3 size={48} className="text-blue-600" />}
-                    title="Quick Turnaround"
-                    description="Get your custom mobile app delivered in just 3 days."
-                  />
-                  <Feature
-                    icon={<Smartphone size={48} className="text-blue-600" />}
-                    title="Mobile Optimized"
-                    description="Ensure a great user experience with mobile-first design principles."
-                  />
-                </div>
-              </section>
+          <section id="features" className="my-20">
+            <h2 className="text-3xl font-semibold text-center mb-12 text-black">
+              Why Choose AppGen?
+            </h2>
+            <div className="grid grid-cols-1 md:grid-rows-3 gap-8">
+              <Feature
+                icon={<Globe size={48} className="text-blue-600" />}
+                title="Website to App"
+                description="Convert any website into a fully functional mobile app with ease."
+              />
+              <Feature
+                icon={<Clock3 size={48} className="text-blue-600" />}
+                title="Quick Turnaround"
+                description="Get your custom mobile app delivered in just 3 days."
+              />
+              <Feature
+                icon={<Smartphone size={48} className="text-blue-600" />}
+                title="Mobile Optimized"
+                description="Ensure a great user experience with mobile-first design principles."
+              />
             </div>
-
-            <AppPreview />
-          </div>
+          </section>
         </section>
 
-        <section id="how-it-works" className="mb-20">
+        <AppPreview />
+
+        <section id="how-it-works" className="my-20">
           <h2 className="text-3xl font-semibold text-center mb-12 text-black">
             How It Works
           </h2>

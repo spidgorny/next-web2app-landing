@@ -30,8 +30,11 @@ export const AppPreview = () => {
     url && url.startsWith("http") && url.includes("://") && url.includes(".");
 
   return (
-    <div className="flex flex-col items-center" id="start">
-      <form onSubmit={run} className="w-full mb-10">
+    <div
+      className="flex flex-col md:flex-row gap-3 items-center md:items-start"
+      id="start"
+    >
+      <form onSubmit={run} className="w-full md:w-1/2 mb-10">
         <div className="flex flex-col gap-3 mb-3">
           <label className="text-gray-800">
             Website URL
@@ -39,7 +42,7 @@ export const AppPreview = () => {
               type="url"
               name="url"
               placeholder="Enter your website URL"
-              className="w-full px-4 py-2 text-gray-700 rounded-lg shadow-sm bg-white"
+              className="w-full px-4 py-2 text-gray-700 border border-gray-300 rounded-lg shadow-sm bg-white"
               value={formData.url ?? ""}
               onChange={onChange}
             />
@@ -50,7 +53,7 @@ export const AppPreview = () => {
               type="text"
               name="title"
               placeholder="App Title"
-              className="w-full px-4 py-2 text-gray-700 rounded-lg shadow-sm"
+              className="w-full px-4 py-2 text-gray-700 rounded-lg shadow-sm border border-gray-300 "
               value={formData.title ?? ""}
               onChange={onChange}
             />
