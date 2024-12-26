@@ -12,7 +12,7 @@ export async function sendContactForm(postData: EmailTemplateProps) {
     from: "Acme <onboarding@resend.dev>",
     to: ["spidgorny@gmail.com"],
     subject: "Contact from Web2App",
-    react: ContactFormEmailTemplate(postData),
+    react: await ContactFormEmailTemplate(postData),
   });
   return { data, error };
 }
