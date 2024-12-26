@@ -7,6 +7,7 @@ import { Feature } from "@/app/feature";
 import { ContactForm } from "@/app/contact-form";
 
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "AppGen - Turn Your Website into a Mobile App",
@@ -16,25 +17,22 @@ export const metadata: Metadata = {
 
 const SaasLandingPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-white">
+    <div className="min-h-screen bg-white">
       <header className="bg-white shadow-md sticky top-0 z-10">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-blue-600">AppGen</div>
+          <div className="text-2xl font-bold text-gray-800">AppGen</div>
           <div className="space-x-4">
-            <Link
-              href="#features"
-              className="text-gray-600 hover:text-blue-600"
-            >
-              Features
+            <Link href="/" className="text-gray-500 hover:text-blue-600">
+              Home
             </Link>
-            <Link
-              href="#how-it-works"
-              className="text-gray-600 hover:text-blue-600"
-            >
-              How It Works
+            <Link href="#about" className="text-gray-500 hover:text-blue-600">
+              About
+            </Link>{" "}
+            <Link href="#contact" className="text-gray-500 hover:text-blue-600">
+              Contact
             </Link>
             <Link href="#start">
-              <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+              <button className="bg-gray-800 text-gray-300 px-4 py-2 rounded-full hover:bg-blue-700">
                 Get Started
               </button>
             </Link>
@@ -43,19 +41,38 @@ const SaasLandingPage = () => {
       </header>
 
       <main className="container mx-auto px-6 py-12">
-        <section className="text-center mb-20">
-          <h1 className="text-5xl font-bold mb-6 text-black">
-            Turn Your Website into a Mobile App in 3 Days
-          </h1>
-          <p className="text-xl text-gray-600 mb-8">
-            No coding required. Just provide your URL and we&apos;ll do the
-            rest.
-          </p>
-          <Link href="#start">
-            <button className="bg-blue-600 text-white text-lg px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">
-              Start Your App Journey
-            </button>
-          </Link>
+        <section className="text-center mb-20 flex flex-col md:flex-row gap-3 justify-between">
+          <div className="w-3/5">
+            <h1 className="text-5xl mb-6 text-black font-serif font-thin italic">
+              Unlock the Power of Your Website: Transform it into a Mobile App.
+            </h1>
+            <p className="text-gray-600 mb-8">
+              Effortlessly create a mobile app from your existing website. Our
+              intuitive platform makes it easy to capture the essence of your
+              web presence and bring it to life as a mobile app.
+            </p>
+            <div className="space-x-3">
+              <Link href="#start">
+                <button className="bg-gray-800 text-gray-300 text-lg px-8 py-3 rounded-full hover:bg-gray-900 transition duration-300 uppercase">
+                  Get Started
+                </button>
+              </Link>
+              <Link href="#about">
+                <button className="bg-gray-100 text-gray-700 text-lg px-8 py-3 rounded-full hover:bg-gray-200 transition duration-300 uppercase border border-gray-500">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className="self-end w-2/5">
+            <Image
+              src="/hand.png"
+              width={700}
+              height={900}
+              alt="Hand holding the mobile phone"
+              className="w-full"
+            />
+          </div>
         </section>
 
         <section className="mb-20">
