@@ -30,6 +30,7 @@ export function ContactForm() {
     <form
       onSubmit={run}
       className="w-full max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md"
+      id="contact"
     >
       <h2 className="text-2xl font-bold mb-6 text-gray-800">
         Start Here. Contact Us

@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.6.0",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@tailwindcss/postcss": "^4.0.5",
     "axios": "^1.7.9",
     "lucide-react": "^0.475.0",
