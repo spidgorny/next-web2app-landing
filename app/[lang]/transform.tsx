@@ -14,6 +14,8 @@ export function Transform() {
               alt="Hero"
               data-landingsite-gallery-type="illustration"
               data-media='{"id":"d630b230-d5d2-11ec-a473-0242ac140003","src":"iconscout","type":"illustration"}'
+              width={512}
+              height={512}
             />
           </div>
           <div className="pt-8 lg:w-1/2 lg:pl-20 lg:pr-12 lg:pt-0">
@@ -56,6 +58,8 @@ export function Transform() {
                 data-testimonial-image=""
                 data-dont-replace=""
                 data-media='{"id":"2156062809","src":"iStock","type":"image"}'
+                width={72}
+                height={72}
               />
               <div>
                 <i

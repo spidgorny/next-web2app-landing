@@ -22,6 +22,8 @@ export function BlogPosts() {
               className="h-64 w-full rounded-3xl object-cover"
               data-landingsite-gallery-type="image"
               data-media='{"id":"1196702694","src":"iStock","type":"image"}'
+              width={64}
+              height={64}
             />
             <div className="px-4 py-6">
               <p className="mb-2 uppercase text-[var(--primary-color)]">
@@ -54,6 +56,8 @@ export function BlogPosts() {
               className="h-64 w-full rounded-3xl object-cover"
               data-landingsite-gallery-type="image"
               data-media='{"id":"1961529307","src":"iStock","type":"image"}'
+              width={64}
+              height={64}
             />
             <div className="px-4 py-6">
               <p className="mb-2 uppercase text-[var(--primary-color)]">
@@ -85,6 +89,8 @@ export function BlogPosts() {
               className="h-64 w-full rounded-3xl object-cover"
               data-landingsite-gallery-type="image"
               data-media='{"id":"1714808445","src":"iStock","type":"image"}'
+              width={64}
+              height={64}
             />
             <div className="px-4 py-6">
               <p className="mb-2 uppercase text-[var(--primary-color)]">

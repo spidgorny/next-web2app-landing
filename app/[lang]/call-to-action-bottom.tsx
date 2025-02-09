@@ -16,6 +16,8 @@ export function CallToActionBottom() {
             className="h-auto w-full"
             data-landingsite-gallery-type="illustration"
             data-media='{"id":"0ca1ecd0-40fb-11eb-926a-0242ac140003","src":"iconscout","type":"illustration"}'
+            width={512}
+            height={512}
           />
         </div>
         <div className="flex w-full flex-col justify-center p-8 md:w-[45%] md:pr-14">

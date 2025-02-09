@@ -36,6 +36,8 @@ export function Hero() {
                 data-testimonial-image=""
                 data-dont-replace=""
                 data-media='{"id":"1309489745","src":"iStock","type":"image"}'
+                width={72}
+                height={72}
               />
               <div>
                 <i
@@ -69,6 +71,8 @@ export function Hero() {
               data-landingsite-gallery-type="illustration"
               data-seo-image=""
               data-media='{"id":"5542f160-d522-11ec-a698-0242ac140003","src":"iconscout","type":"illustration"}'
+              width={512}
+              height={512}
             />
           </div>
         </div>

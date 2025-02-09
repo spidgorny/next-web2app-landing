@@ -50,6 +50,8 @@ export function Maximize() {
                 data-testimonial-image=""
                 data-dont-replace=""
                 data-media='{"id":"1450340623","src":"iStock","type":"image"}'
+                width={72}
+                height={72}
               />
               <div>
                 <i
@@ -82,6 +84,8 @@ export function Maximize() {
               alt="Hero"
               data-landingsite-gallery-type="illustration"
               data-media='{"id":"0cfcf9e0-2c2a-11ec-a131-0242ac140003","src":"iconscout","type":"illustration"}'
+              width={512}
+              height={512}
             />
           </div>
         </div>

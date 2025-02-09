@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+//$fa-font-path: '/webfonts';
+//@import "@fortawesome/fontawesome-free/scss/fontawesome";
+
+@import '../public/all.css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
