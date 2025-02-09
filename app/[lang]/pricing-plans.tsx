@@ -24,7 +24,7 @@ export function PricingPlans() {
               14 Tage kostenlose Testphase
             </p>
             <a
-              href="/probe-app"
+              href="#start"
               className="mx-auto mb-11 block w-2/3 rounded border border-[var(--dark-border-color)] bg-[#ffffff] py-4 font-semibold uppercase text-[var(--dark-text-color)]"
             >
               Wählen Sie diesen Plan
@@ -109,7 +109,7 @@ export function PricingPlans() {
               Monatliches Abonnement
             </p>
             <a
-              href="/probe-app"
+              href="#start"
               className="mx-auto mb-11 block w-2/3 rounded bg-white py-4 font-semibold uppercase text-[var(--dark-text-color)]"
             >
               Wählen Sie diesen Plan
@@ -183,7 +183,7 @@ export function PricingPlans() {
               14 Tage kostenlose Testphase
             </p>
             <a
-              href="/probe-app"
+              href="#start"
               className="mx-auto mb-11 block w-2/3 rounded border border-[var(--dark-border-color)] bg-[#ffffff] py-4 font-semibold uppercase text-[var(--dark-text-color)]"
             >
               Wählen Sie diesen Plan

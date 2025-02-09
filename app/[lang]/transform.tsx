@@ -39,7 +39,7 @@ export function Transform() {
             </ul>
             <div className="flex justify-center lg:block">
               <a
-                href="/probe-app"
+                href="#start"
                 className="mb-12 inline-block rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-medium text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
               >
                 Starten Sie Ihre maßgeschneiderte Test-App!

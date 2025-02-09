@@ -50,7 +50,7 @@ export function Header() {
               {/*    </a>*/}
               {/*    <a*/}
               {/*      className="block cursor-pointer border-b border-solid px-3 py-1.5 hover:bg-[#1900410a] lg:py-3 lg:font-medium"*/}
-              {/*      href="/probe-app"*/}
+              {/*      href="#start"*/}
               {/*    >*/}
               {/*      Probe App*/}
               {/*    </a>*/}
