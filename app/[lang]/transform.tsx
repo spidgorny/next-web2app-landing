@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export function Transform() {
   return (
@@ -6,7 +8,7 @@ export function Transform() {
       <div className="container mx-auto px-6 lg:pt-24">
         <div className="flex flex-col items-stretch lg:flex-row">
           <div className="flex flex-1 items-center justify-center rounded-3xl bg-[var(--light-background-color)] p-6 lg:w-1/2">
-            <img
+            <Image
               className="mx-auto rounded-3xl"
               src="https://cdni.iconscout.com/illustration/premium/thumb/mobile-app-development-5424915-4552066.png"
               alt="Hero"
@@ -38,15 +40,15 @@ export function Transform() {
               <li>Optimieren Sie Ihre Online-Präsenz in der mobilen Welt</li>
             </ul>
             <div className="flex justify-center lg:block">
-              <a
+              <Link
                 href="#start"
                 className="mb-12 inline-block rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-medium text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
               >
                 Starten Sie Ihre maßgeschneiderte Test-App!
-              </a>
+              </Link>
             </div>
             <div className="flex items-center">
-              <img
+              <Image
                 src="https://media.gettyimages.com/id/2156062809/photo/headshot-closeup-portrait-middle-eastern-israel-businesswoman-business-lady-standing-isolated.jpg?b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=mPEqaET5s98W_40DmBTRbYY5z0F-_1YkqdC4TCHJeig="
                 alt="Profile"
                 className="mr-4 h-[72px] w-[72px] rounded-full object-cover"

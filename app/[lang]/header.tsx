@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export function Header() {
   return (
@@ -6,12 +7,12 @@ export function Header() {
       <nav className="container mx-auto py-10">
         <div className="flex items-center justify-between relative">
           <div className="pl-6 text-xl font-bold">
-            <a
+            <Link
               href="/"
               className="text-[var(--primary-color)] [font-family:var(--font-family-heading)] lg:text-3xl"
             >
               <span>Web2App</span>
-            </a>
+            </Link>
           </div>
           <button
             id="mobile-menu-button"
@@ -114,24 +115,24 @@ export function Header() {
               {/*  </div>*/}
               {/*</li>*/}
               <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-                <a href="/" className="text-[var(--dark-text-color)]">
+                <Link href="/" className="text-[var(--dark-text-color)]">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-                <a href="#how" className="text-[var(--dark-text-color)]">
+                <Link href="#how" className="text-[var(--dark-text-color)]">
                   Wie funktioniert es?
-                </a>
+                </Link>
               </li>
               <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-                <a href="#pricing" className="text-[var(--dark-text-color)]">
+                <Link href="#pricing" className="text-[var(--dark-text-color)]">
                   Preisen
-                </a>
+                </Link>
               </li>
               <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-                <a href="#contact" className="text-[var(--dark-text-color)]">
+                <Link href="#contact" className="text-[var(--dark-text-color)]">
                   Kontakt
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="flex flex-col mt-4 lg:flex-row items-center space-y-4 lg:mt-0 lg:space-y-0 lg:space-x-4 text-sm lg:text-base">
@@ -141,12 +142,12 @@ export function Header() {
               {/*>*/}
               {/*  Anmelden*/}
               {/*</a>*/}
-              <a
+              <Link
                 href="#start"
                 className="rounded bg-[var(--primary-button-bg-color)] px-4 py-2 text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)]"
               >
                 Jetzt Starten
-              </a>
+              </Link>
             </div>
           </div>
         </div>

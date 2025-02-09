@@ -1,7 +1,6 @@
 "use server";
 import React from "react";
 import "react-device-frameset/styles/marvel-devices.min.css";
-import { Metadata } from "next";
 import { getDictionary } from "@/app/[lang]/dictionaries.ts";
 import { Footer } from "@/app/[lang]/footer.tsx";
 import { CallToActionBottom } from "@/app/[lang]/call-to-action-bottom.tsx";
@@ -15,7 +14,7 @@ import { Header } from "@/app/[lang]/header.tsx";
 import { AppPreview } from "@/app/[lang]/app-preview.tsx";
 import { ContactForm } from "@/app/[lang]/contact-form.tsx";
 
-export async function getMetadata(): Promise<Metadata> {
+export async function generateMetadata() {
   return {
     title: "AppGen - Turn Your Website into a Mobile App",
     description:

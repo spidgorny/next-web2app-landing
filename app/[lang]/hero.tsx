@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -18,15 +20,15 @@ export function Hero() {
               Zugänglichkeit verbessert.
             </p>
             <div className="mb-12 flex items-center justify-center lg:items-start lg:justify-start">
-              <a
+              <Link
                 href="/vorschau"
                 className="items-center rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-semibold text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
               >
                 Jetzt Vorschau ansehen
-              </a>
+              </Link>
             </div>
             <div className="flex items-center pb-10">
-              <img
+              <Image
                 src="https://media.gettyimages.com/id/1309489745/photo/portrait-of-young-happy-indian-business-man-executive-looking-at-camera-eastern-male.jpg?b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=K1pIuZ-758hZpczvQSLjxvyqeOwy5t5EklPn_ykBHfo="
                 alt="Zufriedener Kunde"
                 className="mr-4 h-[72px] w-[72px] rounded-full object-cover"
@@ -60,7 +62,7 @@ export function Hero() {
             </div>
           </div>
           <div className="flex justify-center items-center w-full h-full lg:w-[55%] lg:pl-6">
-            <img
+            <Image
               src="https://cdni.iconscout.com/illustration/premium/thumb/mobile-app-development-5425148-4545844.png"
               alt="Hero"
               className="mt-8 max-h-[200px] lg:max-h-[500px] h-auto w-auto object-contain lg:mt-0"

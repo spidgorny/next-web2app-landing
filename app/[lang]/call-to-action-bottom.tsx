@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export function CallToActionBottom() {
   return (
@@ -8,7 +10,7 @@ export function CallToActionBottom() {
     >
       <div className="container mx-auto flex flex-col sm:flex-row">
         <div className="mb-6 flex w-full flex-col items-center md:mb-0 md:w-[55%] md:flex-row">
-          <img
+          <Image
             src="https://cdni.iconscout.com/illustration/premium/thumb/mobile-app-development-3100462-2585677.png"
             alt="CTA"
             className="h-auto w-full"
@@ -28,12 +30,12 @@ export function CallToActionBottom() {
             Ihre Kunden auf jedem Gerät begeistert sind.
           </p>
           <div className="mb-12 flex items-center justify-center md:items-start md:justify-start">
-            <a
+            <Link
               href="#start"
               className="items-center rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-semibold text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
             >
               Jetzt starten
-            </a>
+            </Link>
           </div>
         </div>
       </div>

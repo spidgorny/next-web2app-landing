@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export function Maximize() {
   return (
@@ -32,15 +34,15 @@ export function Maximize() {
               </li>
             </ul>
             <div className="flex justify-center lg:block">
-              <a
+              <Link
                 href="#start"
                 className="mb-12 inline-block rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-medium text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
               >
                 Jetzt Ihre Test-App anfordern!
-              </a>
+              </Link>
             </div>
             <div className="flex items-center">
-              <img
+              <Image
                 src="https://media.gettyimages.com/id/1450340623/photo/portrait-of-successful-mature-boss-senior-businessman-in-glasses-asian-looking-at-camera-and.jpg?b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=_3BHqzEwN7yDJ5o41g1ofHVbEp1NYbcqisUY_Sd1eyA="
                 alt="Profile"
                 className="mr-4 h-[72px] w-[72px] rounded-full object-cover"
@@ -74,7 +76,7 @@ export function Maximize() {
             </div>
           </div>
           <div className="mb-4 flex flex-1 items-center justify-center rounded-[var(--button-rounded-radius)] bg-[var(--light-background-color)] p-6 lg:w-1/2">
-            <img
+            <Image
               className="mx-auto rounded-[var(--button-rounded-radius)]"
               src="https://cdni.iconscout.com/illustration/premium/thumb/mobile-app-development-4487960-3722648.png"
               alt="Hero"

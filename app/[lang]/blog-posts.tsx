@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export function BlogPosts() {
   return (
@@ -14,7 +16,7 @@ export function BlogPosts() {
         </p>
         <div className="flex flex-col md:flex-row">
           <div className="m-6 flex-1 rounded-3xl bg-[#ffffff] p-4 shadow-lg shadow-[#ccc]">
-            <img
+            <Image
               src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/e73e20ea-c9b4-4d97-d4cb-ab68d3cb9d00/public"
               alt="Blog"
               className="h-64 w-full rounded-3xl object-cover"
@@ -33,8 +35,8 @@ export function BlogPosts() {
                 spezifischen Funktionen zur Verbesserung der Benutzererfahrung
                 anpassen können.
               </p>
-              <a
-                href="/vorschau"
+              <Link
+                href="#start"
                 className="flex items-center uppercase text-[var(--primary-color)] hover:underline"
               >
                 Mehr erfahren{" "}
@@ -42,11 +44,11 @@ export function BlogPosts() {
                   className="fa-solid fa-arrow-right ml-2"
                   aria-hidden="true"
                 ></i>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="m-6 flex-1 rounded-3xl bg-[#ffffff] p-4 shadow-lg shadow-[#ccc]">
-            <img
+            <Image
               src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/8fa1ccaf-944a-44a2-b24e-0634a392da00/public"
               alt="Blog"
               className="h-64 w-full rounded-3xl object-cover"
@@ -64,7 +66,7 @@ export function BlogPosts() {
                 Nutzen Sie Tools für die Teamarbeit in der Cloud, um die
                 Produktivität und Zugänglichkeit Ihrer Daten zu steigern.
               </p>
-              <a
+              <Link
                 href="/dienstleistungen"
                 className="flex items-center uppercase text-[var(--primary-color)] hover:underline"
               >
@@ -73,11 +75,11 @@ export function BlogPosts() {
                   className="fa-solid fa-arrow-right ml-2"
                   aria-hidden="true"
                 ></i>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="m-6 flex-1 rounded-3xl bg-[#ffffff] p-4 shadow-lg shadow-[#ccc]">
-            <img
+            <Image
               src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/e74fc51c-e2aa-4b07-5f67-daf18596b000/public"
               alt="Blog"
               className="h-64 w-full rounded-3xl object-cover"
@@ -96,7 +98,7 @@ export function BlogPosts() {
                 in einer vernetzten Umgebung, während Sie die
                 Benutzerfreundlichkeit optimieren.
               </p>
-              <a
+              <Link
                 href="/kontakt"
                 className="flex items-center uppercase text-[var(--primary-color)] hover:underline"
               >
@@ -105,7 +107,7 @@ export function BlogPosts() {
                   className="fa-solid fa-arrow-right ml-2"
                   aria-hidden="true"
                 ></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -6,11 +6,10 @@ import "react-device-frameset/styles/marvel-devices.min.css";
 import { AppPreview } from "@/app/[lang]/app-preview.tsx";
 import { Feature } from "@/app/[lang]/feature.tsx";
 import { ContactForm } from "@/app/[lang]/contact-form.tsx";
-import { Metadata } from "next";
 import Image from "next/image";
 import { getDictionary } from "@/app/[lang]/dictionaries.ts";
 
-export async function getMetadata(): Promise<Metadata> {
+export async function generateMetadata() {
   return {
     title: "AppGen - Turn Your Website into a Mobile App",
     description:
@@ -32,7 +31,7 @@ export default async function SaasLandingPage({
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-gray-800">AppGen</div>
           <div className="space-x-4">
-            <Link href="/public" className="text-gray-500 hover:text-blue-600">
+            <Link href="/" className="text-gray-500 hover:text-blue-600">
               Home
             </Link>
             <Link href="#about" className="text-gray-500 hover:text-blue-600">
