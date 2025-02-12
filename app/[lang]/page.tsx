@@ -3,15 +3,12 @@ import React from "react";
 import "react-device-frameset/styles/marvel-devices.min.css";
 import { getDictionary } from "@/app/[lang]/dictionaries.ts";
 import { Footer } from "@/app/[lang]/footer.tsx";
-import { CallToActionBottom } from "@/app/[lang]/call-to-action-bottom.tsx";
 import { PricingPlans } from "@/app/[lang]/pricing-plans.tsx";
-import { ThreeSteps } from "@/app/[lang]/three-steps.tsx";
 import { Maximize } from "@/app/[lang]/maximize.tsx";
-import { Transform } from "@/app/[lang]/transform.tsx";
-import { FourSteps } from "@/app/[lang]/four-steps.tsx";
+import { WhichProblem } from "@/app/[lang]/which-problem.tsx";
+import { HowItWorks } from "@/app/[lang]/how-it-works.tsx";
 import { Hero } from "@/app/[lang]/hero.tsx";
 import { Header } from "@/app/[lang]/header.tsx";
-import { AppPreview } from "@/app/[lang]/app-preview.tsx";
 import { ContactForm } from "@/app/[lang]/contact-form.tsx";
 
 export async function generateMetadata() {
@@ -52,14 +49,14 @@ export default async function SaasLandingPage({
       <div className="[font-family:var(--font-family-body)]">
         <Header />
         <Hero />
-        <FourSteps />
-        <Transform />
+        <HowItWorks />
+        <WhichProblem />
         <Maximize />
-        <ThreeSteps />
+        {/*<ThreeSteps />*/}
         <PricingPlans />
         {/*<BlogPosts />*/}
-        <CallToActionBottom />
-        <AppPreview />
+        {/*<CallToActionBottom />*/}
+        {/*<AppPreview />*/}
         <div className="my-20">
           <ContactForm />
         </div>

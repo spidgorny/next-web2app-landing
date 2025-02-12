@@ -1,16 +1,26 @@
 import React from "react";
 
-export function FourSteps() {
+export function HowItWorks() {
   return (
-    <section className="py-20 code-section" id="how">
+    <section
+      className="py-24 code-section [font-family:Rubik] bg-gradient-to-br from-[var(--light-background-color)] to-[var(--medium-background-color)] relative overflow-hidden"
+      id="how"
+      style={{
+        backgroundImage:
+          "url('https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/8eb84447-5c9d-42a7-f45a-40a801f13f00/publicContain')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundBlendMode: "soft-light",
+      }}
+    >
       <div className="container mx-auto px-6">
         <h2 className="mb-6 text-center text-6xl font-bold [font-family:var(--font-family-heading)]">
           So funktioniert Web2App
         </h2>
-        <h3 className="mb-12 text-center text-xl text-[var(--gray-text-color)]">
+        <h3 className="mb-16 text-center text-xl font-medium text-[var(--dark-text-color)] max-w-4xl mx-auto tracking-wide leading-relaxed">
           Verwandeln Sie Ihre Webseite mühelos in eine mobile App mit Web2App
         </h3>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           <div className="flex-1 rounded-3xl bg-[#ffffff] p-8 text-center shadow-lg shadow-[#ccc] md:max-w-xs md:p-12">
             <div className="mx-auto mb-12 flex h-20 w-20 items-center justify-center rounded-full bg-[var(--light-background-color)] text-4xl">
               <span className="text-[var(--primary-color)]">1</span>
@@ -20,7 +30,7 @@ export function FourSteps() {
             </h4>
             <p className="text-[var(--gray-text-color)]">
               Nutzen Sie einen einfachen Link, um eine Vorschau Ihrer Webseite
-              in App-Format zu erleben. Sehen Sie sofort, wie Ihr Inhalt auf
+              in App-Form zu erleben. Sehen Sie sofort, wie Ihr Inhalt auf
               mobilen Geräten aussieht.
             </p>
           </div>
@@ -29,12 +39,11 @@ export function FourSteps() {
               <span className="text-[var(--primary-color)]">2</span>
             </div>
             <h4 className="mb-2 text-2xl font-semibold">
-              Anpassbare App-Features
+              App-Prototyp entwickeln
             </h4>
             <p className="text-[var(--gray-text-color)]">
-              Gestalten Sie Ihre App nach Ihren Wünschen. Wählen Sie die
-              Funktionen aus, die Ihrem Geschäft und Ihren Kunden am besten
-              dienen.
+              Erhalten Sie schnell und kostengünstig einen Prototyp der App, den
+              Sie für frühzeitiges Nutzer- und Marktfeedback nutzen können.
             </p>
           </div>
           <div className="flex-1 rounded-3xl bg-[#ffffff] p-8 text-center shadow-lg shadow-[#ccc] md:max-w-xs md:p-12">
@@ -42,25 +51,11 @@ export function FourSteps() {
               <span className="text-[var(--primary-color)]">3</span>
             </div>
             <h4 className="mb-2 text-2xl font-semibold">
-              Schnelle Kontaktaufnahme
+              Beratung & Anpassung
             </h4>
             <p className="text-[var(--gray-text-color)]">
-              Treten Sie schnell mit uns in Kontakt, um eine kostengünstige
-              Test-App zu erhalten. Erleben Sie die Vorteile, ohne lange
-              Wartezeiten.
-            </p>
-          </div>
-          <div className="flex-1 rounded-3xl bg-[#ffffff] p-8 text-center shadow-lg shadow-[#ccc] md:max-w-xs md:p-12">
-            <div className="mx-auto mb-12 flex h-20 w-20 items-center justify-center rounded-full bg-[var(--light-background-color)] text-4xl">
-              <span className="text-[var(--primary-color)]">4</span>
-            </div>
-            <h4 className="mb-2 text-2xl font-semibold">
-              Optimale Benutzererfahrung
-            </h4>
-            <p className="text-[var(--gray-text-color)]">
-              Überzeugen Sie Ihre Kunden mit einer reibungslosen
-              Benutzeroberfläche und schneller Ladezeit, die die Interaktion
-              fördert und die Zufriedenheit steigert.
+              Kontaktieren Sie uns direkt für individuelle App-Anpassungen. Wir
+              beraten Sie zu Features, die Ihren Kunden einen Mehrwert bieten.
             </p>
           </div>
         </div>

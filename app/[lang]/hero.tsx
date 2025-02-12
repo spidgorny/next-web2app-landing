@@ -12,19 +12,22 @@ export function Hero() {
         <div className="flex flex-col-reverse items-center lg:flex-row">
           <div className="mt-12 w-full lg:mt-32 lg:w-[45%] lg:pr-14">
             <h1 className="mb-4 text-center text-4xl font-bold [font-family:var(--font-family-heading)] lg:text-left lg:text-5xl xl:text-6xl">
-              Verwandeln Sie Ihre Webseite in eine mobile App
+              <span className="text-3xl lg:text-4xl xl:text-5xl text-[var(--primary-color)]">
+                Von der Webseite zur App
+              </span>
+              - Einfach und Schnell mit Web2App
             </h1>
             <p className="mb-12 text-center text-xl text-[var(--dark-text-color)] lg:text-left">
-              Entdecken Sie, wie Web2App Ihre Webseite nahtlos in eine mobile
-              App integriert und so die Benutzerfreundlichkeit und
-              Zugänglichkeit verbessert.
+              Nutzen Sie die Vorteile einer App, ohne komplizierte
+              Entwicklungsschritte. Lassen Sie Ihre App nach Ihren individuellen
+              Wünschen anpassen und fördern Sie eine starke Kundenbindung.
             </p>
             <div className="mb-12 flex items-center justify-center lg:items-start lg:justify-start">
               <Link
                 href="/vorschau"
                 className="items-center rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-semibold text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
               >
-                Jetzt Vorschau ansehen
+                App Vorschau erhalten
               </Link>
             </div>
             <div className="flex items-center pb-10">
@@ -45,8 +48,8 @@ export function Hero() {
                   aria-hidden="true"
                 ></i>
                 <p className="mb-2 inline text-lg text-[var(--dark-text-color)]">
-                  Web2App hat unsere Online-Präsenz revolutioniert, indem es uns
-                  ermöglicht, unsere Webseite als mobile App zu erleben.
+                  Web2App dient als kostengünstige Alternative zu komplexen Apps
+                  und ist perfekt um eine eigne App auszutesten.
                 </p>
                 <i
                   className="fa-sharp fa-solid fa-quote-right relative -top-2 ml-1"
@@ -54,10 +57,10 @@ export function Hero() {
                 ></i>
                 <p>
                   <span className="font-semibold text-[var(--dark-text-color)]">
-                    Anna Müller
+                    Julian Hartmann
                   </span>
                   <span className="pl-2 font-semibold text-[var(--primary-color)]">
-                    (Marketing-Managerin bei Innovatech)
+                    (App-Entwickler bei Web2App)
                   </span>
                 </p>
               </div>
