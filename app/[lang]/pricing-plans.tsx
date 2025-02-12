@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export function PricingPlans() {
   return (
@@ -24,12 +25,12 @@ export function PricingPlans() {
             <p className="mb-9 text-lg font-light uppercase text-[var(--dark-text-color)]">
               14 Tage geld Zurück garantie
             </p>
-            <a
-              href="/probe-app"
+            <Link
+              href="#start"
               className="mx-auto mb-11 block w-2/3 rounded border border-[var(--dark-border-color)] bg-[#ffffff] py-4 font-semibold uppercase text-[var(--dark-text-color)]"
             >
               Wählen Sie diesen Plan
-            </a>
+            </Link>
             <ul className="space-y-3 font-light">
               <li className="flex min-h-[28px] items-center">
                 <i
@@ -111,12 +112,12 @@ export function PricingPlans() {
             <p className="mb-9 text-lg font-light uppercase">
               Preis variiert je nach aufwand
             </p>
-            <a
-              href="/probe-app"
+            <Link
+              href="#start"
               className="mx-auto mb-11 block w-2/3 rounded bg-white py-4 font-semibold uppercase text-[var(--dark-text-color)]"
             >
               Wählen Sie diesen Plan
-            </a>
+            </Link>
             <ul className="space-y-3 font-light text-white">
               <li className="flex min-h-[28px] items-center">
                 <i
@@ -197,12 +198,12 @@ export function PricingPlans() {
               Monatliches abonnement
               <br />
             </p>
-            <a
-              href="/probe-app"
+            <Link
+              href="#start"
               className="mx-auto mb-11 block w-2/3 rounded border border-[var(--dark-border-color)] bg-[#ffffff] py-4 font-semibold uppercase text-[var(--dark-text-color)]"
             >
               Wählen Sie diesen Plan
-            </a>
+            </Link>
             <ul className="space-y-3 font-light">
               <li className="flex min-h-[28px] items-center">
                 <i
