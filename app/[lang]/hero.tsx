@@ -14,8 +14,8 @@ export function Hero() {
             <h1 className="mb-4 text-center text-4xl font-bold [font-family:var(--font-family-heading)] lg:text-left lg:text-5xl xl:text-6xl">
               <span className="text-3xl lg:text-4xl xl:text-5xl text-[var(--primary-color)]">
                 Von der Webseite zur App
-              </span>
-              - Einfach und Schnell mit Web2App
+              </span>{" "}
+              – Einfach und Schnell mit Web2App
             </h1>
             <p className="mb-12 text-center text-xl text-[var(--dark-text-color)] lg:text-left">
               Nutzen Sie die Vorteile einer App, ohne komplizierte
