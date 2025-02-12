@@ -57,9 +57,7 @@ export default async function SaasLandingPage({
         {/*<BlogPosts />*/}
         {/*<CallToActionBottom />*/}
         {/*<AppPreview />*/}
-        <div className="my-20">
-          <ContactForm />
-        </div>
+        <ContactForm />
         <Footer />
       </div>
     </div>

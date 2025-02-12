@@ -1,11 +1,11 @@
 import * as React from "react";
 
 export interface EmailTemplateProps {
-  name?: string;
+  firstName?: string;
+  lastName?: string;
   email?: string;
+  phone?: string;
   url?: string;
-  appAndroid?: boolean;
-  appIos?: boolean;
   message?: string;
 }
 
@@ -15,9 +15,8 @@ export const ContactFormEmailTemplate: React.FC<
   <div>
     <h1>Welcome, Slawa & Stefan</h1>
     <p>
-      Somebody called &quot;{props.name}&quot; (email:{" "}
-      <a href={`mailto:${props.email}`}>{props.email}</a>) wants to have a{" "}
-      {props.appAndroid ? "Android" : ""}, {props.appIos ? "iOS" : ""} app(s)
+      Somebody called &quot;{props.firstName} {props.lastName}&quot; (email:{" "}
+      <a href={`mailto:${props.email}`}>{props.email}</a>) wants to have an app
       for the website (URL: <a href={props.url}>{props.url}</a>.
     </p>
     <p>Message: {props.message}</p>
