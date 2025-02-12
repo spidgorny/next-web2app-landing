@@ -58,7 +58,7 @@ export function Maximize() {
               </Link>
             </div>
             <div className="flex items-center">
-              <img
+              <Image
                 src="https://media.gettyimages.com/id/1450340623/photo/portrait-of-successful-mature-boss-senior-businessman-in-glasses-asian-looking-at-camera-and.jpg?b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=_3BHqzEwN7yDJ5o41g1ofHVbEp1NYbcqisUY_Sd1eyA="
                 alt="Profile"
                 className="mr-4 h-[72px] w-[72px] rounded-full object-cover"
@@ -66,6 +66,8 @@ export function Maximize() {
                 data-testimonial-image=""
                 data-dont-replace=""
                 data-media='{"id":"1450340623","src":"iStock","type":"image"}'
+                width={72}
+                height={72}
               />
               <div className="">
                 <i
