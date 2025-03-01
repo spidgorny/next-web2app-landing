@@ -3,7 +3,7 @@ import React from "react";
 export function HowItWorks() {
   return (
     <section
-      className="py-24 code-section [font-family:Rubik] bg-gradient-to-br from-[var(--light-background-color)] to-[var(--medium-background-color)] relative overflow-hidden"
+      className="py-24 code-section bg-gradient-to-br from-[var(--light-background-color)] to-[var(--medium-background-color)] relative overflow-hidden"
       id="how"
       style={{
         backgroundImage:
