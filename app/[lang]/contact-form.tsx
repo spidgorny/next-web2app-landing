@@ -1,36 +1,11 @@
 "use client";
 import { useFormData } from "spidgorny-react-helpers/use-form-data";
-import React, { FormEvent, useCallback, useState } from "react";
+import React, { FormEvent } from "react";
 import { FaSpinner } from "react-icons/fa6";
 import { EmailTemplateProps } from "@/app/components/contact-form-email-template.tsx";
 import { useStateObj } from "spidgorny-react-helpers/use-state-obj";
 import { sendContactFormAction } from "@/app/[lang]/actions.ts";
-import { useWorking } from "spidgorny-react-helpers/use-working.tsx";
-
-export function useAsyncWorking(
-  code: (e: any) => Promise<any>,
-  deps: any[] = [],
-) {
-  const { isWorking, setWorking, wrapWorking } = useWorking();
-  const [error, setError] = useState<Error | null>(null);
-  const workingCode = wrapWorking(code);
-
-  let run = useCallback(async (e: any) => {
-    try {
-      setError(null);
-      return await workingCode(e);
-    } catch (e) {
-      setError(e as Error);
-      setWorking(false);
-    }
-  }, deps);
-
-  return {
-    isWorking,
-    error,
-    run,
-  };
-}
+import { useAsyncWorking } from "@/lib/use-async-working.tsx";
 
 export function ContactForm() {
   const { formData, onChange } = useFormData<EmailTemplateProps>({
