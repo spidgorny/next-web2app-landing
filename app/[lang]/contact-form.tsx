@@ -72,7 +72,7 @@ export function ContactForm() {
                     <div className="text-2xl font-semibold">
                       Rufen Sie uns an
                     </div>
-                    <div className="">(030) 12345678</div>
+                    <div className="">+49 163 443 20 90</div>
                   </div>
                 </div>
               </div>
