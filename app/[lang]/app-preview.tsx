@@ -34,6 +34,11 @@ export const AppPreview = () => {
 		[formData],
 	);
 
+	// don't run preview in the iframe mode (recursively)
+	if (window.self !== window.top) {
+		return null;
+	}
+
 	const url = iframeUrl.value;
 	const isValidUrl =
 		url && url.startsWith("http") && url.includes("://") && url.includes(".");
