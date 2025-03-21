@@ -34,6 +34,9 @@ export const AppPreview = () => {
 		[formData],
 	);
 
+	if (typeof window === "undefined") {
+		return null;
+	}
 	// don't run preview in the iframe mode (recursively)
 	if (window.self !== window.top) {
 		return null;
