@@ -2,7 +2,7 @@ import { Resend } from "resend";
 import {
   ContactFormEmailTemplate,
   EmailTemplateProps,
-} from "@/app/components/contact-form-email-template.tsx";
+} from "@/components/contact-form-email-template.tsx";
 import invariant from "tiny-invariant";
 
 export async function sendContactForm(postData: EmailTemplateProps) {

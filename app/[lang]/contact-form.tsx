@@ -2,7 +2,7 @@
 import { useFormData } from "spidgorny-react-helpers/use-form-data";
 import React, { FormEvent } from "react";
 import { FaSpinner } from "react-icons/fa6";
-import { EmailTemplateProps } from "@/app/components/contact-form-email-template.tsx";
+import { EmailTemplateProps } from "@/components/contact-form-email-template.tsx";
 import { useStateObj } from "spidgorny-react-helpers/use-state-obj";
 import { sendContactFormAction } from "@/app/[lang]/actions.ts";
 import { useAsyncWorking } from "@/lib/use-async-working.tsx";

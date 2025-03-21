@@ -1,0 +1,13 @@
+{
+  "landing": {
+    "unlock": "Unlock the Power of Your Website: Transform it into a Mobile App"
+  },
+  "AppPreview": {
+    "title": "Try it yourself.",
+    "introText": "Just enter the URL of your website and see how it looks as a mobile app.",
+    "websiteUrl": "Website URL",
+    "enterWebsiteUrl": "Enter your website URL",
+    "appTitle": "App Title (optional)",
+    "submitButton": "Preview App"
+  }
+}

@@ -1,4 +1,4 @@
-import { EmailTemplateProps } from "@/app/components/contact-form-email-template.tsx";
+import { EmailTemplateProps } from "@/components/contact-form-email-template.tsx";
 import { NextRequest } from "next/server";
 import { sendContactForm } from "@/lib/resend/send-contact-form.ts";
 
